@@ -1,10 +1,10 @@
 ﻿// Метот и генератор случайных чисел
 
-void FillArray(int[collection])
+void FillArray(int[] collection)
 {
-    int length = collection.Lenght;
+    int length = collection.Length;
     int index = 0;
-    while(index < lenght)
+    while(index < length)
     {
         collection[index] = new Random().Next(1, 10);
         index++;
@@ -17,7 +17,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position <count)
     {
-        Console.WhriteLine(col[position]);
+        Console.WriteLine(col[position]);
         position++;
     }
 }
